@@ -1,0 +1,5 @@
+f = open('26-k1.txt')
+n, k = map(int, f.readline().split())
+*a, = map(int, f.readlines())
+a.sort(reverse=True)
+print(a[k], sum(a[:k])*0.2)
